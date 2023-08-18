@@ -1,8 +1,8 @@
 # DiviD
 
-<h1> BOAS PRÁTICAS </h1>
+# <h1> BOAS PRÁTICAS </h1>
 
-# <h3> Comandos: </h3>
+<h3> Comandos: </h3>
 
 <p> git add . </p>
 
@@ -12,6 +12,7 @@
 
 <p> git push origin branch </p>
 
+# Dicas de GIT
 Antes de iniciar os commits no projeto GIT, crie um arquivo .gitignore que irá ignorar arquivos de logs, binários e arquivos com senhas. Você pode encontrar vários modelos na internet, como nesse repositório.
 
 Nunca realize commit direto na Main. Essa prática poderá facilmente ocasionar em perca de código quando você atuar em conjunto com outros desenvolvedores. Utilize a criação de branchs.
