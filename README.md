@@ -1,5 +1,7 @@
 # DiviD
 
+https://rogerdudler.github.io/git-guide/index.pt_BR.html
+
 <p> Aplicativo para ........ </p>
 
 # <h1> BOAS PRÁTICAS </h1>
