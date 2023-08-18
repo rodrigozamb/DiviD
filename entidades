@@ -1,0 +1,29 @@
+
+
+USUÁRIOS
+	nome : String
+	email: String
+	senha: String
+	idade: Int
+	cidade: String
+	profileURL: String 
+
+GRUPOS
+	nome: String
+	integrantes: [Usuário]
+	dividas: [Divida]
+	created_at: String
+
+DESPESA
+	id: String
+	nome: String
+	donoId: String
+	created_at: String
+
+DIVIDA
+	userId: String
+	despesaId: String
+	valor: Double
+	status: Boolean
+
+
