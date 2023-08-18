@@ -14,6 +14,25 @@
 
 <p> git push origin branch </p>
 
+# Comandos para branch
+
+<h3> Para criar a nova branch a partir da branch que você está: </h3>
+
+<p> git branch MinhaNovaBrach </p>
+
+<h3> Para criar a nova branch a partir de uma branch especifica: </h3>
+
+<p> git branch -c branchEspecifica MinhaNovaBrach </p>
+
+<h3> Nos dois casos você precisa trocar para a branch criada, commitar e fazer o trancking: </h3>
+
+<p> git checkout MinhaNovaBrach </p>
+
+<p> git commit -m "commit novo" </p>
+
+<p> git push -u origin MinhaNovaBrach </p>
+
+
 # Dicas de GIT
 Antes de iniciar os commits no projeto GIT, crie um arquivo .gitignore que irá ignorar arquivos de logs, binários e arquivos com senhas. Você pode encontrar vários modelos na internet, como nesse repositório.
 
