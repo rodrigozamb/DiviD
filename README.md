@@ -2,15 +2,15 @@
 
 <h1> BOAS PRÁTICAS </h1>
 
-<h3> Comandos: </h3>
+# <h3> Comandos: </h3>
 
-# git add .
+<p> git add . </p>
 
-# git commit -m "nome do commit"
+<p> git commit -m "nome do commit" </p>
 
-# git pull origin branch
+<p> git pull origin branch </p>
 
-# git push origin branch
+<p> git push origin branch </p>
 
 Antes de iniciar os commits no projeto GIT, crie um arquivo .gitignore que irá ignorar arquivos de logs, binários e arquivos com senhas. Você pode encontrar vários modelos na internet, como nesse repositório.
 
