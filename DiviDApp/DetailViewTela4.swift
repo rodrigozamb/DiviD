@@ -27,7 +27,7 @@ struct DetailViewTela4: View {
 
                     HStack {
                         Label("5", systemImage: "person.crop.circle.fill").font(.system(size: 35))
-
+  
                         Label("", systemImage: "cart.badge.questionmark").font(.system(size: 80))
 
                         Text("15/08").font(.system(size: 20))
