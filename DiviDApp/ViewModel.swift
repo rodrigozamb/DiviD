@@ -7,7 +7,7 @@ class ViewModel: ObservableObject {
     @Published var usuarios: [Usuario] = []
     
     func fetchUsuarios(){
-        guard let url = URL(string: "https://anapioficeandfire.com/api/houses") else {
+        guard let url = URL(string: "http://127.0.0.1:1880/dividusuarios") else {
             return
         }
         
