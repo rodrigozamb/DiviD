@@ -21,8 +21,6 @@ struct Divida: Codable, Hashable{
     let despesaID: String
     let valor: Double
     let status: Bool
-    let cidade: String
-    let profileURL: String
 }
 
 struct Despesa: Codable, Hashable{
@@ -35,8 +33,6 @@ struct Grupo: Codable, Hashable{
     let nome: String
     let integrantes: [Usuario]
     let despesas: [Despesa]
-    let idade: Int
-    let cidade: String
-    let profileURL: String
+    let created_at: Date
 }   
 

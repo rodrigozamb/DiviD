@@ -13,6 +13,7 @@
 		C507190E2A8FF54800408DFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C507190D2A8FF54800408DFD /* Preview Assets.xcassets */; };
 		C5FD01882A93CE85006B2BB8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FD01872A93CE85006B2BB8 /* ViewModel.swift */; };
 		C5FD018A2A93CED1006B2BB8 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FD01892A93CED1006B2BB8 /* APIModels.swift */; };
+		C5FD018E2A93DD06006B2BB8 /* GroupDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FD018D2A93DD06006B2BB8 /* GroupDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C507190D2A8FF54800408DFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5FD01872A93CE85006B2BB8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C5FD01892A93CED1006B2BB8 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		C5FD018D2A93DD06006B2BB8 /* GroupDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				C50719062A8FF54700408DFD /* DiviDAppApp.swift */,
 				C50719082A8FF54700408DFD /* ContentView.swift */,
 				C5FD01872A93CE85006B2BB8 /* ViewModel.swift */,
+				C5FD018D2A93DD06006B2BB8 /* GroupDetailsView.swift */,
 				C5FD01892A93CED1006B2BB8 /* APIModels.swift */,
 				C507190A2A8FF54800408DFD /* Assets.xcassets */,
 				C507190C2A8FF54800408DFD /* Preview Content */,
@@ -147,6 +150,7 @@
 				C5FD01882A93CE85006B2BB8 /* ViewModel.swift in Sources */,
 				C50719092A8FF54700408DFD /* ContentView.swift in Sources */,
 				C50719072A8FF54700408DFD /* DiviDAppApp.swift in Sources */,
+				C5FD018E2A93DD06006B2BB8 /* GroupDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
