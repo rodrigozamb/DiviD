@@ -32,10 +32,10 @@ struct GroupDetailsView: View {
     }
 }
 
-struct GroupDetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        GroupDetailsView(
-            group: Grupo(nome: "Teste", integrantes: <#T##[Usuario]?#>, despesas: <#T##[Despesa]?#>, idade: Int?, cidade: <#T##String?#>, profileURL: <#T##String?#>)
-        )
-    }
-}
+//struct GroupDetailsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GroupDetailsView(
+//            group: Grupo(nome: "Teste", integrantes: <#T##[Usuario]?#>, despesas: <#T##[Despesa]?#>, idade: Int?, cidade: <#T##String?#>, profileURL: <#T##String?#>)
+//        )
+//    }
+//}
