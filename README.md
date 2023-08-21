@@ -2,6 +2,8 @@
 
 https://rogerdudler.github.io/git-guide/index.pt_BR.html
 
+https://www.canva.com/design/DAFrjxuBzm0/QpuT1Z4IRPc9hc0-z8890A/edit
+
 <p> Aplicativo para ........ </p>
 
 # <h1> BOAS PRÁTICAS </h1>
