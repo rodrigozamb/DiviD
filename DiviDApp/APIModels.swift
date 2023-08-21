@@ -12,8 +12,6 @@ struct Usuario: Codable, Hashable{
     let email: String
     let senha: String
     let idade: Int
-    let cidade: String
-    let profileURL: String
 }
 
 struct Divida: Codable, Hashable{
