@@ -42,17 +42,15 @@ struct ProfilePage: View {
                     }
                     .padding([.horizontal,.bottom])
                     .background(
-                        
                         Color.white
                             .cornerRadius(12)
                     )
                     .padding()
                     .padding(.top,40)
                     
-                    // Navigation Link personalizados
+                    // Navigation Links personalizados
                     
                     CustomNavigationLink(title: "Editar perfil") {
-                        
                         Text("")
                             .navigationTitle("Editar perfil")
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -61,7 +59,6 @@ struct ProfilePage: View {
                     
                     
                     CustomNavigationLink(title: "Endereço de cobrança") {
-                        
                         Text("")
                             .navigationTitle("Endereço de cobrança")
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -69,7 +66,6 @@ struct ProfilePage: View {
                     }
                     
                     CustomNavigationLink(title: "Histórico de Pagamentos") {
-                        
                         Text("")
                             .navigationTitle("Histórico de Pagamentos")
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -77,7 +73,6 @@ struct ProfilePage: View {
                     }
                     
                     CustomNavigationLink(title: "Privacidade") {
-                        
                         Text("")
                             .navigationTitle("Privacidade")
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -85,7 +80,6 @@ struct ProfilePage: View {
                     }
                     
                     CustomNavigationLink(title: "Ajustes") {
-                        
                         Text("")
                             .navigationTitle("Ajustes")
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -98,11 +92,10 @@ struct ProfilePage: View {
             .navigationBarHidden(true)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(
-                
                 Color("HomeBG")
                     .ignoresSafeArea()
             )
-        }
+        }.tint(.black)
     }
     
     // Evitando novas structs
@@ -121,10 +114,7 @@ struct ProfilePage: View {
             }
             .foregroundColor(.black)
             .padding()
-            .background(
-                Color.white
-                    .cornerRadius(12)
-            )
+            .background(Color.white.cornerRadius(12))
             .padding(.horizontal)
             .padding(.top,10)
         }

@@ -17,21 +17,19 @@ struct OnBoardingPage: View {
     @State var showLoginPage: Bool = false
     var body: some View {
         VStack(alignment: .leading){
-            
-            
             Spacer()
             Image("logo")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .scaledToFit()
-//            Spacer()
+            Spacer()
             
             Button {
                 withAnimation{
                     showLoginPage = true
                 }
             } label: {
-             
+                
                 Text("Começar")
                     .font(.custom(latoBold, size: 18))
                     .fontWeight(.semibold)
@@ -51,12 +49,8 @@ struct OnBoardingPage: View {
         .padding()
         .padding(.top,getRect().height < 750 ? 0 : 20)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-        
-            Color("Purple")
-        )
+        .background(Color("Purple"))
         .overlay(
-        
             Group{
                 if showLoginPage{
                     LoginPage()

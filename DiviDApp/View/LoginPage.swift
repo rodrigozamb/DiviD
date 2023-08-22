@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LoginPage: View {
     @StateObject var loginData: LoginPageModel = LoginPageModel()
+    // mostrar tela de login
+    @State var showMainPage: Bool = false
     var body: some View {
         
         VStack{
@@ -90,11 +92,8 @@ struct LoginPage: View {
                     
                     // Botão de login
                     Button {
-                        if loginData.registerUser{
-                            loginData.Register()
-                        }
-                        else{
-                            loginData.Login()
+                        withAnimation{
+                            showMainPage = true
                         }
                     } label: {
                         
@@ -137,7 +136,14 @@ struct LoginPage: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("Purple"))
-        
+        .overlay(
+            Group{
+                if showMainPage{
+                    MainPage()
+                        .transition(.move(edge: .bottom))
+                }
+            }
+        )
         // Limpando os dados após mudança
         // Opcional...
         .onChange(of: loginData.registerUser) { newValue in
@@ -153,7 +159,6 @@ struct LoginPage: View {
     func CustomTextField(icon: String,title: String,hint: String,value: Binding<String>,showPassword: Binding<Bool>)->some View{
         
         VStack(alignment: .leading, spacing: 12) {
-            
             Label {
                 Text(title)
                     .font(.custom(BarlowCondensedSemiBold, size: 16))
