@@ -28,6 +28,7 @@ struct DetailViewTela4: View {
                             Text("RACHA")
                                 .font(.system(size: 35))
                                 .fontWeight(.bold)
+                                .offset(x: -50)
                                 .padding()
                             Label("", systemImage: "gearshape.fill").font(.system(size: 40))
                         }
