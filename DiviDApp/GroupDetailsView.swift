@@ -7,6 +7,17 @@
 
 import SwiftUI
 
+struct MyVariables {
+    static var selectedUsers: [FilterUsers] = [FilterUsers(user: Usuario(nome: "Rodrigo  Zamboni", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
+                                               FilterUsers(user: Usuario(nome: "Ricardo  Zamboni", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
+                                               FilterUsers(user: Usuario(nome: "Joao Pedro Espindola", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
+                                               FilterUsers(user: Usuario(nome: "Otavio", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
+                                               FilterUsers(user: Usuario(nome: "Igor", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
+                                               FilterUsers(user: Usuario(nome: "Gabriel Thomaz", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
+                                               FilterUsers(user: Usuario(nome: "Edilson", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false)
+                                              ]
+}
+
 struct FilterUsers: Hashable {
     var user: Usuario
     var checked: Bool
@@ -16,8 +27,7 @@ struct FilterUsers: Hashable {
 struct GroupDetailsView: View {
     @State var nomeDespesa = ""
     @State var valorDespesa = ""
-    var selectedUsers: [FilterUsers]
-    
+    @State var contador = 0
     var body: some View {
         
         NavigationStack{
@@ -48,7 +58,7 @@ struct GroupDetailsView: View {
                         Text("PARTICIPANTES")
                             .font(.system(size: 32, weight: .bold))
                             .padding()
-                        
+                        Text("\(contador)/\(MyVariables.selectedUsers.count)")
                         
                     }
                     
@@ -56,9 +66,45 @@ struct GroupDetailsView: View {
                     VStack{
                         
                         ScrollView(.vertical){
-                            ForEach(selectedUsers, id: \.self){ integerante in
+                            ForEach(Array(MyVariables.selectedUsers.enumerated()), id: \.offset) { index, integrante in
                                 
-                                CardView(filter: FilterUsers(user: integerante.user, checked: false))
+                                
+                                
+                                HStack{
+                                    Text(integrante.user.nome)
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(.black)
+                                    
+                                    Spacer()
+                                    
+                                    
+                                    ZStack{
+                                        Circle()
+                                            .stroke( MyVariables.selectedUsers[index].checked ? Color("green") : Color.gray, lineWidth: 1)
+                                            .frame(width: 25, height: 25)
+                                        
+                                        
+                                        if MyVariables.selectedUsers[index].checked {
+                                            Image(systemName: "checkmark.circle.fill")
+                                                .font(.system(size: 25))
+                                                .foregroundColor(.green)
+                                        }
+                                    }
+                                }
+                                .padding(.horizontal)
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                    MyVariables.selectedUsers[index].checked.toggle()
+                                    if MyVariables.selectedUsers[index].checked{
+                                        contador = contador + 1
+                                    }else {
+                                        contador = contador - 1
+                                    }
+                                        print(MyVariables.selectedUsers[index])
+                                        print(MyVariables.selectedUsers[index].checked)
+                                    }
+                                
+                                
                                    
                             }
                         }
@@ -68,7 +114,8 @@ struct GroupDetailsView: View {
                     
                     Spacer()
                     Button("Criar"){
-                        print(selectedUsers)
+                        print(MyVariables.selectedUsers)
+                        // aqui iremos fazer a requisicao de criacao de uma nova despesa
                     }
                     .frame(width: 150, height: 50)
                     .padding()
@@ -94,51 +141,10 @@ struct GroupDetailsView: View {
 }
 
 
-struct CardView: View {
-    @State var filter: FilterUsers
-    
-    var body: some View{
-        HStack{
-            Text(filter.user.nome)
-                .fontWeight(.semibold)
-                .foregroundColor(.black)
-            
-            Spacer()
-            
-            
-            ZStack{
-                Circle()
-                    .stroke( filter.checked ? Color("green") : Color.gray, lineWidth: 1)
-                    .frame(width: 25, height: 25)
-                
-                if filter.checked{
-                    Image(systemName: "checkmark.circle.fill")
-                        .font(.system(size: 25))
-                        .foregroundColor(.green)
-                }
-            }
-        }
-        .padding(.horizontal)
-        .contentShape(Rectangle())
-        .onTapGesture {
-                filter.checked.toggle()
-                
-
-            }
-    }
-}
 
 struct GroupDetailsView_Previews: PreviewProvider {
+
     static var previews: some View {
-        GroupDetailsView(
-            selectedUsers: [FilterUsers(user: Usuario(nome: "Rodrigo  Zamboni", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
-                            FilterUsers(user: Usuario(nome: "Ricardo  Zamboni", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
-                            FilterUsers(user: Usuario(nome: "Joao Pedro Espindola", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
-                            FilterUsers(user: Usuario(nome: "Otavio", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
-                            FilterUsers(user: Usuario(nome: "Igor", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
-                            FilterUsers(user: Usuario(nome: "Gabriel Thomaz", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
-                            FilterUsers(user: Usuario(nome: "Edilson", email: "rodrigo@ufu.br", senha: "rodrigo123", idade: 23, cidade: "Uberlandia MG", profileURL: "AAAA"), checked: false),
-                           ]
-        )
+        GroupDetailsView()
     }
 }
