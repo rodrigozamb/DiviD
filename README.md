@@ -6,7 +6,10 @@ https://www.canva.com/design/DAFrw0S4PAU/MKYe2NNh__WDrysGbbNrHA/edit
 
 https://time.lol/
 
-<p> Aplicativo para ........ </p>
+<p> Aplicativo de finalização do curso HackaTruck.
+    Esse aplicativo vem com o propósito de facilitar saídas em grupos, sendo um auxiliador na hora de dividir a conta para ser paga.
+    Crie o grupo de pessoas, adicione as despesas feitas no dia, acompanhe a cobrança e pagamentos das dívidas.
+</p>
 
 # <h1> BOAS PRÁTICAS </h1>
 
