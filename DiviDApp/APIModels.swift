@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct usuario: Codable, Hashable, Identifiable{
+struct Usuario: Codable, Hashable, Identifiable{
     let id: String
     let nome: String
     let email: String
@@ -15,7 +15,7 @@ struct usuario: Codable, Hashable, Identifiable{
     let idade: Int
 }
 
-struct divida: Codable, Hashable, Identifiable{
+struct Divida: Codable, Hashable, Identifiable{
     let id: String
     let userID: String
     let despesaID: String
@@ -23,14 +23,14 @@ struct divida: Codable, Hashable, Identifiable{
     let status: Bool
 }
 
-struct despesa: Codable, Hashable, Identifiable{
+struct Despesa: Codable, Hashable, Identifiable{
     let id: String
     let nome: String
     let donoID: String
     let created_at: Date
 }
 
-struct grupo: Codable, Hashable, Identifiable{
+struct Grupo: Codable, Hashable, Identifiable{
     let id: String
     let nome: String
     let integrantes: [String]

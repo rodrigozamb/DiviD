@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GroupDetailsView: View {
     
-    var group: grupo
+    var group: Grupo
     
     var body: some View {
         
