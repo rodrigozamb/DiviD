@@ -4,7 +4,7 @@ import Foundation
 
 class ViewModel: ObservableObject {
     
-    @Published var usuarios: [Usuario] = []
+    @Published var usuarios: [usuario] = []
     
     func fetchUsuarios(){
         guard let url = URL(string: "http://192.168.128.245:1880/dividregistrar") else {
@@ -17,7 +17,7 @@ class ViewModel: ObservableObject {
             }
             
             do {
-                let parsed = try JSONDecoder().decode([Usuario].self, from: data)
+                let parsed = try JSONDecoder().decode([usuario].self, from: data)
                 
                 DispatchQueue.main.async {
                     self?.usuarios = parsed
