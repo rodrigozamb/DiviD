@@ -11,7 +11,7 @@ import SwiftUI
 struct DiviDAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NovoGrupo()
         }
     }
 }
