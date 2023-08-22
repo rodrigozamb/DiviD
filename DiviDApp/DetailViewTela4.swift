@@ -5,6 +5,35 @@
 //  Created by Student10 on 21/08/23.
 //
 
+/**
+ 
+ grupo para a tela --> N despesas --> para cada despesa: N dividas
+ 
+ 1 despesa
+ nome : aluguel bola
+ donoid : "Rodrigo123"
+ id: "despesa1"
+ 
+ Dividas:
+ 
+ [
+ {
+ "userID" : "Otavio",
+ "despsaID" : "despesa1",
+ "valor" : "5,00",
+ "status" : false,
+ }
+ 
+ {
+ "userID" : "Rodrigo"
+ "despsaID" : "despesa1"
+ "valor" : "5,00"
+ "status" : false
+ }
+ ]
+ 
+ **/
+
 import SwiftUI
 struct DetailViewTela4: View {
     let ids = [1, 2, 3 , 4, 5,6,7,8,9] // Seus IDs aqui
@@ -14,7 +43,7 @@ struct DetailViewTela4: View {
                 ZStack {
                     
                     LinearGradient(gradient: Gradient(colors: [.blue]), startPoint: .top, endPoint: .bottom).ignoresSafeArea()
-                    RoundedRectangle(cornerRadius: 25).fill(.white).frame(width: 400, height: 620).offset(x:0,y: 145)
+                    RoundedRectangle(cornerRadius: 25).fill(.white).frame(width: 400, height: 500).offset(x:0,y: 145)
                     
                     VStack {
                         HStack {
@@ -23,7 +52,7 @@ struct DetailViewTela4: View {
                                 .font(.system(size: 35))
                                 .fontWeight(.bold)
                                 .padding()
-                            Label("", systemImage: "gearshape.fill").font(.system(size: 70))
+                            Label("", systemImage: "gearshape.fill").font(.system(size: 40))
                         }
                         HStack {
                             Label("5", systemImage: "person.crop.circle.fill").font(.system(size: 35))
