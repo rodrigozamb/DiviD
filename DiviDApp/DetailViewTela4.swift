@@ -69,6 +69,3 @@ struct DetailViewTela4_Previews: PreviewProvider {
         DetailViewTela4()
     }
 }
-
-
-
