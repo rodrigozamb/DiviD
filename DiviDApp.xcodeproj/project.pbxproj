@@ -13,6 +13,10 @@
 		C507190E2A8FF54800408DFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C507190D2A8FF54800408DFD /* Preview Assets.xcassets */; };
 		C5FD01882A93CE85006B2BB8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FD01872A93CE85006B2BB8 /* ViewModel.swift */; };
 		C5FD018A2A93CED1006B2BB8 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FD01892A93CED1006B2BB8 /* APIModels.swift */; };
+		F92ACA432A9523C400684437 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92ACA422A9523C400684437 /* MainPage.swift */; };
+		F92ACA462A952C1B00684437 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92ACA452A952C1B00684437 /* Home.swift */; };
+		F92ACA482A952FAA00684437 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92ACA472A952FAA00684437 /* SearchView.swift */; };
+		F92ACA4A2A95309700684437 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92ACA492A95309700684437 /* ProfilePage.swift */; };
 		F92DB5FD2A93E3B7000A08A3 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = F92DB5FC2A93E3B7000A08A3 /* Fonts */; };
 		F92DB5FF2A93E541000A08A3 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */; };
 		F933FDA32A93DF1800B0256F /* OnBoardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933FDA22A93DF1800B0256F /* OnBoardingPage.swift */; };
@@ -28,6 +32,10 @@
 		C507190D2A8FF54800408DFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5FD01872A93CE85006B2BB8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C5FD01892A93CED1006B2BB8 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		F92ACA422A9523C400684437 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		F92ACA452A952C1B00684437 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F92ACA472A952FAA00684437 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		F92ACA492A95309700684437 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
 		F92DB5FC2A93E3B7000A08A3 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
 		F92DB6002A93F256000A08A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -88,12 +96,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F92ACA442A952AD000684437 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				F92ACA452A952C1B00684437 /* Home.swift */,
+				F92ACA492A95309700684437 /* ProfilePage.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 		F933FDA02A93DE9A00B0256F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F92ACA442A952AD000684437 /* TabView */,
 				F933FDA22A93DF1800B0256F /* OnBoardingPage.swift */,
 				F933FDA42A93E25200B0256F /* LoginPage.swift */,
 				F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */,
+				F92ACA422A9523C400684437 /* MainPage.swift */,
+				F92ACA472A952FAA00684437 /* SearchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,12 +199,16 @@
 			files = (
 				C5FD018A2A93CED1006B2BB8 /* APIModels.swift in Sources */,
 				C5FD01882A93CE85006B2BB8 /* ViewModel.swift in Sources */,
+				F92ACA462A952C1B00684437 /* Home.swift in Sources */,
+				F92ACA432A9523C400684437 /* MainPage.swift in Sources */,
 				F933FDA72A93E27A00B0256F /* LoginPageModel.swift in Sources */,
 				C50719092A8FF54700408DFD /* ContentView.swift in Sources */,
+				F92ACA4A2A95309700684437 /* ProfilePage.swift in Sources */,
 				F933FDA32A93DF1800B0256F /* OnBoardingPage.swift in Sources */,
 				F92DB5FF2A93E541000A08A3 /* CustomCorners.swift in Sources */,
 				F933FDA52A93E25200B0256F /* LoginPage.swift in Sources */,
 				C50719072A8FF54700408DFD /* DiviDAppApp.swift in Sources */,
+				F92ACA482A952FAA00684437 /* SearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

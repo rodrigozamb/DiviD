@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    // Log Status..
+    @AppStorage("log_Status") var log_Status: Bool = false
     var body: some View {
-        VStack{
-            OnBoardingPage()
-        }
-        .onAppear{
-            for family in UIFont.familyNames.sorted() {
-                let names = UIFont.fontNames(forFamilyName: family)
-                print("Family: \(family) Font names: \(names)")
+        Group{
+            if log_Status{
+                MainPage()
+            }
+            else{
+                OnBoardingPage()
             }
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

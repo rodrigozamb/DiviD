@@ -12,7 +12,6 @@ struct LoginPage: View {
     var body: some View {
         
         VStack{
-            
             Text("Bem\nvindo!")
                 .font(.custom(latoBold, size: 55).bold())
                 .foregroundColor(.white)
@@ -20,12 +19,9 @@ struct LoginPage: View {
                 .frame(height: getRect().height / 3.5)
                 .padding()
                 .background(
-                    
                     ZStack{
-                        
                         // Círculo com Gradiente
                         LinearGradient(colors: [
-                            
                             Color("LoginCircle"),
                             Color("LoginCircle")
                                 .opacity(0.8),
@@ -145,7 +141,6 @@ struct LoginPage: View {
         // Limpando os dados após mudança
         // Opcional...
         .onChange(of: loginData.registerUser) { newValue in
-            
             loginData.email = ""
             loginData.password = ""
             loginData.re_Enter_Password = ""
@@ -175,15 +170,12 @@ struct LoginPage: View {
                 TextField(hint, text: value)
                     .padding(.top,2)
             }
-            
             Divider()
                 .background(Color.black.opacity(0.4))
         }
         // Mostrando botão de mostrar senha
         .overlay(
-            
             Group{
-                
                 if title.contains("Senha"){
                     Button(action: {
                         showPassword.wrappedValue.toggle()
@@ -195,7 +187,6 @@ struct LoginPage: View {
                     .offset(y: 8)
                 }
             }
-            
             ,alignment: .trailing
         )
     }

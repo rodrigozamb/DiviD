@@ -1,12 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "DiviD App - Hackatruck.png",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "filename" : "Profile.png",
+      "filename" : "Home.png",
       "idiom" : "universal",
       "scale" : "1x"
     },

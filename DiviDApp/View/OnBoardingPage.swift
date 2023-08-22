@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-// fonte customizada
-let customFont = "Raleway-Regular"
+// fontes customizada
 let latoBold = "Lato-Bold"
 let barlowCondensedRegular = "BarlowCondensed-Regular"
 let BarlowCondensedSemiBold = "BarlowCondensed-SemiBold"
