@@ -13,6 +13,11 @@
 		C507190E2A8FF54800408DFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C507190D2A8FF54800408DFD /* Preview Assets.xcassets */; };
 		C5FD01882A93CE85006B2BB8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FD01872A93CE85006B2BB8 /* ViewModel.swift */; };
 		C5FD018A2A93CED1006B2BB8 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FD01892A93CED1006B2BB8 /* APIModels.swift */; };
+		F92DB5FD2A93E3B7000A08A3 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = F92DB5FC2A93E3B7000A08A3 /* Fonts */; };
+		F92DB5FF2A93E541000A08A3 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */; };
+		F933FDA32A93DF1800B0256F /* OnBoardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933FDA22A93DF1800B0256F /* OnBoardingPage.swift */; };
+		F933FDA52A93E25200B0256F /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933FDA42A93E25200B0256F /* LoginPage.swift */; };
+		F933FDA72A93E27A00B0256F /* LoginPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933FDA62A93E27A00B0256F /* LoginPageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,12 @@
 		C507190D2A8FF54800408DFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5FD01872A93CE85006B2BB8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C5FD01892A93CED1006B2BB8 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		F92DB5FC2A93E3B7000A08A3 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
+		F92DB6002A93F256000A08A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F933FDA22A93DF1800B0256F /* OnBoardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
+		F933FDA42A93E25200B0256F /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		F933FDA62A93E27A00B0256F /* LoginPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +66,10 @@
 		C50719052A8FF54700408DFD /* DiviDApp */ = {
 			isa = PBXGroup;
 			children = (
+				F92DB6002A93F256000A08A3 /* Info.plist */,
+				F92DB5FC2A93E3B7000A08A3 /* Fonts */,
+				F933FDA12A93DECA00B0256F /* ViewModel */,
+				F933FDA02A93DE9A00B0256F /* View */,
 				C50719062A8FF54700408DFD /* DiviDAppApp.swift */,
 				C50719082A8FF54700408DFD /* ContentView.swift */,
 				C5FD01872A93CE85006B2BB8 /* ViewModel.swift */,
@@ -71,6 +86,24 @@
 				C507190D2A8FF54800408DFD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F933FDA02A93DE9A00B0256F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F933FDA22A93DF1800B0256F /* OnBoardingPage.swift */,
+				F933FDA42A93E25200B0256F /* LoginPage.swift */,
+				F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F933FDA12A93DECA00B0256F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F933FDA62A93E27A00B0256F /* LoginPageModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92DB5FD2A93E3B7000A08A3 /* Fonts in Resources */,
 				C507190E2A8FF54800408DFD /* Preview Assets.xcassets in Resources */,
 				C507190B2A8FF54800408DFD /* Assets.xcassets in Resources */,
 			);
@@ -145,7 +179,11 @@
 			files = (
 				C5FD018A2A93CED1006B2BB8 /* APIModels.swift in Sources */,
 				C5FD01882A93CE85006B2BB8 /* ViewModel.swift in Sources */,
+				F933FDA72A93E27A00B0256F /* LoginPageModel.swift in Sources */,
 				C50719092A8FF54700408DFD /* ContentView.swift in Sources */,
+				F933FDA32A93DF1800B0256F /* OnBoardingPage.swift in Sources */,
+				F92DB5FF2A93E541000A08A3 /* CustomCorners.swift in Sources */,
+				F933FDA52A93E25200B0256F /* LoginPage.swift in Sources */,
 				C50719072A8FF54700408DFD /* DiviDAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +315,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DiviDApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiviDApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -305,6 +344,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DiviDApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DiviDApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
