@@ -9,29 +9,6 @@
  
  grupo para a tela --> N despesas --> para cada despesa: N dividas
  
- 1 despesa
- nome : aluguel bola
- donoid : "Rodrigo123"
- id: "despesa1"
- 
- Dividas:
- 
- [
- {
- "userID" : "Otavio",
- "despsaID" : "despesa1",
- "valor" : "5,00",
- "status" : false,
- }
- 
- {
- "userID" : "Rodrigo"
- "despsaID" : "despesa1"
- "valor" : "5,00"
- "status" : false
- }
- ]
- 
  **/
 
 import SwiftUI
