@@ -43,7 +43,7 @@ struct DetailViewTela4: View {
                 ZStack {
                     
                     LinearGradient(gradient: Gradient(colors: [.blue]), startPoint: .top, endPoint: .bottom).ignoresSafeArea()
-                    RoundedRectangle(cornerRadius: 25).fill(.white).frame(width: 400, height: 500).offset(x:0,y: 145)
+                    RoundedRectangle(cornerRadius: 25).fill(.white).frame(width: 400, height: 600).offset(x:0,y: 145)
                     
                     VStack {
                         HStack {
@@ -57,7 +57,7 @@ struct DetailViewTela4: View {
                         HStack {
                             Label("5", systemImage: "person.crop.circle.fill").font(.system(size: 35))
                             
-                            Label("", systemImage: "cart.badge.questionmark").font(.system(size: 80))
+                            Label("", systemImage: "cart.badge.questionmark").font(.system(size: 40))
                             Text("15/08").font(.system(size: 20))
                         }
                         ScrollView {
