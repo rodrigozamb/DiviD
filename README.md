@@ -2,7 +2,9 @@
 
 https://rogerdudler.github.io/git-guide/index.pt_BR.html
 
-[https://www.canva.com/design/DAFrjxuBzm0/QpuT1Z4IRPc9hc0-z8890A/edit](https://www.canva.com/design/DAFrw0S4PAU/MKYe2NNh__WDrysGbbNrHA/edit)
+https://www.canva.com/design/DAFrw0S4PAU/MKYe2NNh__WDrysGbbNrHA/edit
+
+https://time.lol/
 
 <p> Aplicativo para ........ </p>
 
