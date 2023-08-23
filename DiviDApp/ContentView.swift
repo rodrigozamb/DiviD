@@ -8,37 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @StateObject var viewModel = ViewModel()
-    
+    // Log Status..
+    //@AppStorage("log_Status") var log_Status: Bool = false
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .onAppear(){
-            viewModel.fetchUsuarios()
-            viewModel.fetchGrupos()
-            viewModel.fetchDespesas()
-            viewModel.fetchDividas()
-            
-            print("USUARIOS")
-            print(viewModel.usuarios)
-            
-//            print("GRUPOS")
-//            print(viewModel.grupos)
-//
-//            print("DESPESAS")
-//            print(viewModel.despesas)
-//
-//            print("DIVIDAS")
-//            print(viewModel.dividas)
-            
-            
-        }
+//        Group{
+//            if log_Status{
+//                MainPage()
+//            }
+//            else{
+//                OnBoardingPage()
+//            }
+//        }
+        OnBoardingPage()
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

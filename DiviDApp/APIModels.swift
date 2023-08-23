@@ -27,7 +27,7 @@ struct Despesa: Codable, Hashable, Identifiable{
     let id: String
     let nome: String
     let donoID: String
-    let created_at: Date
+    let created_at: String
 }
 
 struct Grupo: Codable, Hashable, Identifiable{
@@ -35,6 +35,6 @@ struct Grupo: Codable, Hashable, Identifiable{
     let nome: String
     let integrantes: [String]
     let despesas: [String]
-    let created_at: Date
+    let created_at: String
 }   
 
