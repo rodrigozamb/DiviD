@@ -2,9 +2,14 @@
 
 https://rogerdudler.github.io/git-guide/index.pt_BR.html
 
-https://www.canva.com/design/DAFrjxuBzm0/QpuT1Z4IRPc9hc0-z8890A/edit
+https://www.canva.com/design/DAFrw0S4PAU/MKYe2NNh__WDrysGbbNrHA/edit
 
-<p> Aplicativo para ........ </p>
+https://time.lol/
+
+<h3> Aplicativo de finalização do curso HackaTruck.</h3>
+    
+<p>Esse aplicativo vem com o propósito de facilitar saídas em grupos, sendo um auxiliador na hora de dividir a conta para ser paga.</p>
+<p> Crie o grupo de pessoas, adicione as despesas feitas no dia, acompanhe a cobrança e pagamentos das dívidas. </p>
 
 # <h1> BOAS PRÁTICAS </h1>
 
