@@ -15,7 +15,7 @@ struct LoginPage: View {
         
         VStack{
             Text("Bem\nvindo!")
-                .font(.custom(latoBold, size: 55).bold())
+                .font(.custom(CustomFont.latoBold, size: 55).bold())
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity,alignment: .leading)
                 .frame(height: getRect().height / 3.5)
@@ -58,7 +58,7 @@ struct LoginPage: View {
                 VStack(spacing: 15){
                     
                     Text(loginData.registerUser ? "Cadastrar" : "Entrar")
-                        .font(.custom(latoBold, size: 22).bold())
+                        .font(.custom(CustomFont.latoBold, size: 22).bold())
                         .frame(maxWidth: .infinity,alignment: .leading)
                     
                     // Campo de texto customizado
@@ -83,7 +83,7 @@ struct LoginPage: View {
                     } label: {
                         
                         Text("Esqueceu a senha?")
-                            .font(.custom(latoBold, size: 14))
+                            .font(.custom(CustomFont.latoBold, size: 14))
                             .fontWeight(.semibold)
                             .foregroundColor(Color("Purple"))
                     }
@@ -98,7 +98,7 @@ struct LoginPage: View {
                     } label: {
                         
                         Text("Entrar")
-                            .font(.custom(latoBold, size: 17).bold())
+                            .font(.custom(CustomFont.latoBold, size: 17).bold())
                             .padding(.vertical,20)
                             .frame(maxWidth: .infinity)
                             .foregroundColor(.white)
@@ -118,7 +118,7 @@ struct LoginPage: View {
                     } label: {
                         
                         Text(loginData.registerUser ? "Voltar para login" : "Criar conta")
-                            .font(.custom(latoBold, size: 14))
+                            .font(.custom(CustomFont.latoBold, size: 14))
                             .fontWeight(.semibold)
                             .foregroundColor(Color("Purple"))
                     }
@@ -161,7 +161,7 @@ struct LoginPage: View {
         VStack(alignment: .leading, spacing: 12) {
             Label {
                 Text(title)
-                    .font(.custom(BarlowCondensedSemiBold, size: 16))
+                    .font(.custom(CustomFont.barlowCondensedSemiBold, size: 16))
             } icon: {
                 Image(systemName: icon)
             }
@@ -186,7 +186,7 @@ struct LoginPage: View {
                         showPassword.wrappedValue.toggle()
                     }, label: {
                         Text(showPassword.wrappedValue ? "Esconder" : "Mostrar")
-                            .font(.custom(latoBold, size: 13).bold())
+                            .font(.custom(CustomFont.latoBold, size: 13).bold())
                             .foregroundColor(Color("Purple"))
                     })
                     .offset(y: 8)

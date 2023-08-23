@@ -8,9 +8,9 @@
 import SwiftUI
 
 // fontes customizada
-let latoBold = "Lato-Bold"
-let barlowCondensedRegular = "BarlowCondensed-Regular"
-let BarlowCondensedSemiBold = "BarlowCondensed-SemiBold"
+//let latoBold = "Lato-Bold"
+//let barlowCondensedRegular = "BarlowCondensed-Regular"
+//let BarlowCondensedSemiBold = "BarlowCondensed-SemiBold"
 
 struct OnBoardingPage: View {
     // mostrar tela de login
@@ -31,7 +31,7 @@ struct OnBoardingPage: View {
             } label: {
                 
                 Text("Começar")
-                    .font(.custom(latoBold, size: 18))
+                    .font(.custom(CustomFont.latoBold, size: 18))
                     .fontWeight(.semibold)
                     .padding(.vertical,18)
                     .frame(maxWidth: .infinity)
@@ -72,3 +72,10 @@ extension View{
         return UIScreen.main.bounds
     }
 }
+
+enum CustomFont {
+    static let latoBold = "Lato-Bold"
+    static let barlowCondensedRegular = "BarlowCondensed-Regular"
+    static let barlowCondensedSemiBold = "BarlowCondensed-SemiBold"
+}
+
