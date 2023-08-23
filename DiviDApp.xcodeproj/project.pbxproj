@@ -20,6 +20,7 @@
 		F92DB5FD2A93E3B7000A08A3 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = F92DB5FC2A93E3B7000A08A3 /* Fonts */; };
 		F92DB5FF2A93E541000A08A3 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */; };
 		F92F1C8C2A9683D60030AE77 /* NewGroupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F1C8B2A9683D60030AE77 /* NewGroupPage.swift */; };
+		F92F1C8E2A9691E50030AE77 /* GroupCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F1C8D2A9691E50030AE77 /* GroupCardView.swift */; };
 		F933FDA32A93DF1800B0256F /* OnBoardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933FDA22A93DF1800B0256F /* OnBoardingPage.swift */; };
 		F933FDA52A93E25200B0256F /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933FDA42A93E25200B0256F /* LoginPage.swift */; };
 		F933FDA72A93E27A00B0256F /* LoginPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933FDA62A93E27A00B0256F /* LoginPageModel.swift */; };
@@ -41,6 +42,7 @@
 		F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
 		F92DB6002A93F256000A08A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F92F1C8B2A9683D60030AE77 /* NewGroupPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGroupPage.swift; sourceTree = "<group>"; };
+		F92F1C8D2A9691E50030AE77 /* GroupCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCardView.swift; sourceTree = "<group>"; };
 		F933FDA22A93DF1800B0256F /* OnBoardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
 		F933FDA42A93E25200B0256F /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		F933FDA62A93E27A00B0256F /* LoginPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageModel.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */,
 				F92ACA422A9523C400684437 /* MainPage.swift */,
 				F92ACA472A952FAA00684437 /* SearchView.swift */,
+				F92F1C8D2A9691E50030AE77 /* GroupCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				F92F1C8C2A9683D60030AE77 /* NewGroupPage.swift in Sources */,
 				F92ACA432A9523C400684437 /* MainPage.swift in Sources */,
 				F933FDA72A93E27A00B0256F /* LoginPageModel.swift in Sources */,
+				F92F1C8E2A9691E50030AE77 /* GroupCardView.swift in Sources */,
 				C50719092A8FF54700408DFD /* ContentView.swift in Sources */,
 				F92ACA4A2A95309700684437 /* ProfilePage.swift in Sources */,
 				F933FDA32A93DF1800B0256F /* OnBoardingPage.swift in Sources */,
