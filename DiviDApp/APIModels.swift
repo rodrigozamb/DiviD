@@ -36,5 +36,4 @@ struct Grupo: Codable, Hashable, Identifiable{
     let integrantes: [String]
     let despesas: [String]
     let created_at: String
-}   
-
+}
