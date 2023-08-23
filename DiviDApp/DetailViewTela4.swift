@@ -5,12 +5,6 @@
 //  Created by Student10 on 21/08/23.
 //
 
-/**
- 
- grupo para a tela --> N despesas --> para cada despesa: N dividas
- 
- **/
-
 import SwiftUI
 struct DetailViewTela4: View {
     let ids = [1, 2, 3 , 4, 5,6,7,8,9] // Seus IDs aqui
