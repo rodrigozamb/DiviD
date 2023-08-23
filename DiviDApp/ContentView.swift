@@ -18,26 +18,6 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
-        .onAppear(){
-            viewModel.fetchUsuarios()
-            viewModel.fetchGrupos()
-            viewModel.fetchDespesas()
-            viewModel.fetchDividas()
-            
-            print("USUARIOS")
-            print(viewModel.usuarios)
-            
-//            print("GRUPOS")
-//            print(viewModel.grupos)
-//
-//            print("DESPESAS")
-//            print(viewModel.despesas)
-//
-//            print("DIVIDAS")
-//            print(viewModel.dividas)
-            
-            
-        }
     }
 }
 
