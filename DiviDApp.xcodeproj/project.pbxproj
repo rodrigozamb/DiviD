@@ -14,7 +14,7 @@
 		C5FD01882A93CE85006B2BB8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FD01872A93CE85006B2BB8 /* ViewModel.swift */; };
 		C5FD018A2A93CED1006B2BB8 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FD01892A93CED1006B2BB8 /* APIModels.swift */; };
 		C5FD018E2A93DD06006B2BB8 /* GroupDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FD018D2A93DD06006B2BB8 /* GroupDetailsView.swift */; };
-		FDDFC0B12A9521720085D306 /* NovoGrupo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDFC0B02A9521720085D306 /* NovoGrupo.swift */; };
+		FDDFC0B12A9521720085D306 /* NewGroupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDFC0B02A9521720085D306 /* NewGroupPage.swift */; };
 		FDDFC0B42A9531630085D306 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDDFC0B32A9531630085D306 /* Lato-Bold.ttf */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +27,7 @@
 		C5FD01872A93CE85006B2BB8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		C5FD01892A93CED1006B2BB8 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
 		C5FD018D2A93DD06006B2BB8 /* GroupDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailsView.swift; sourceTree = "<group>"; };
-		FDDFC0B02A9521720085D306 /* NovoGrupo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoGrupo.swift; sourceTree = "<group>"; };
+		FDDFC0B02A9521720085D306 /* NewGroupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupPage.swift; sourceTree = "<group>"; };
 		FDDFC0B32A9531630085D306 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "assets/Lato/Lato-Bold.ttf"; sourceTree = SOURCE_ROOT; };
 		FDDFC0B52A9531830085D306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,7 +68,7 @@
 				C5FD01872A93CE85006B2BB8 /* ViewModel.swift */,
 				C5FD018D2A93DD06006B2BB8 /* GroupDetailsView.swift */,
 				C5FD01892A93CED1006B2BB8 /* APIModels.swift */,
-				FDDFC0B02A9521720085D306 /* NovoGrupo.swift */,
+				FDDFC0B02A9521720085D306 /* NewGroupPage.swift */,
 				FDDFC0B22A9530FA0085D306 /* Fontes */,
 				C507190A2A8FF54800408DFD /* Assets.xcassets */,
 				C507190C2A8FF54800408DFD /* Preview Content */,
@@ -166,7 +166,7 @@
 				C5FD018A2A93CED1006B2BB8 /* APIModels.swift in Sources */,
 				C5FD01882A93CE85006B2BB8 /* ViewModel.swift in Sources */,
 				C50719092A8FF54700408DFD /* ContentView.swift in Sources */,
-				FDDFC0B12A9521720085D306 /* NovoGrupo.swift in Sources */,
+				FDDFC0B12A9521720085D306 /* NewGroupPage.swift in Sources */,
 				C50719072A8FF54700408DFD /* DiviDAppApp.swift in Sources */,
 				C5FD018E2A93DD06006B2BB8 /* GroupDetailsView.swift in Sources */,
 			);
