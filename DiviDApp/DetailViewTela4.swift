@@ -9,29 +9,6 @@
  
  grupo para a tela --> N despesas --> para cada despesa: N dividas
  
- 1 despesa
- nome : aluguel bola
- donoid : "Rodrigo123"
- id: "despesa1"
- 
- Dividas:
- 
- [
- {
- "userID" : "Otavio",
- "despsaID" : "despesa1",
- "valor" : "5,00",
- "status" : false,
- }
- 
- {
- "userID" : "Rodrigo"
- "despsaID" : "despesa1"
- "valor" : "5,00"
- "status" : false
- }
- ]
- 
  **/
 
 import SwiftUI
@@ -51,6 +28,7 @@ struct DetailViewTela4: View {
                             Text("RACHA")
                                 .font(.system(size: 35))
                                 .fontWeight(.bold)
+                                .offset(x: -50)
                                 .padding()
                             Label("", systemImage: "gearshape.fill").font(.system(size: 40))
                         }

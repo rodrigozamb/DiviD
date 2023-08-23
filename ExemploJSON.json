@@ -1,0 +1,98 @@
+[
+    {
+        "_id": "296c4c8bc95e28612a767254d1fb28c8",
+        "_rev": "1-792b449e44dbd74fab635b0a9697979e",
+        "usuario": {
+            "nome": "Otavio",
+            "email": "otavio.campos@ufu.br",
+            "senha": "otavio123",
+            "idade": "23"
+        },
+        "divida": {
+            "userID": "1",
+            "despesaID": "despesa1",
+            "valor": 20,
+            "status": "False"
+        },
+        "grupo": {
+            "nome": "grupo 1",
+            "integrantes": [
+                {
+                    "nome": "Otavio",
+                    "email": "otavio.campos@ufu.br",
+                    "senha": "otavio123",
+                    "idade": "23"
+                },
+                {
+                    "nome": "Rodrigo",
+                    "email": "rodrigo@gmail.com",
+                    "senha": "rodriguinho2000",
+                    "idade": "25"
+                }
+            ],
+            "despesas": [
+                {
+                    "userID": "1",
+                    "despesaID": "despesa1",
+                    "valor": 20,
+                    "status": "False"
+                },
+                {
+                    "userID": "2",
+                    "despesaID": "despesa2",
+                    "valor": 25,
+                    "status": "True"
+                }
+            ],
+            "created_at": "Date"
+        }
+    },
+    {
+        "_id": "34d1acd1c084d9a556bea6e4c044446d",
+        "_rev": "1-acc2a2086a560d4bb310e45261ce1ce0",
+        "usuario": {
+            "nome": "Igor",
+            "email": "igor@gmail.com",
+            "senha": "igor123",
+            "idade": "20"
+        },
+        "divida": {
+            "userID": "2",
+            "despesaID": "despesa2",
+            "valor": 25,
+            "status": "False"
+        },
+        "grupo": {
+            "nome": "aluguel bola",
+            "integrantes": [
+                {
+                    "nome": "Igor",
+                    "email": "igor@gmail.com",
+                    "senha": "igor123",
+                    "idade": "20"
+                },
+                {
+                    "nome": "jose",
+                    "email": "jose@gmail.com",
+                    "senha": "josezinho123123123",
+                    "idade": "987"
+                }
+            ],
+            "despesas": [
+                {
+                    "userID": "2",
+                    "despesaID": "despesa2",
+                    "valor": 25,
+                    "status": "False"
+                },
+                {
+                    "userID": "3",
+                    "despesaID": "despesa2",
+                    "valor": 25,
+                    "status": "True"
+                }
+            ],
+            "created_at": "Date"
+        }
+    }
+]

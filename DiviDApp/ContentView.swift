@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var viewModel = ViewModel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -15,7 +18,26 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
         }
-        .padding()
+        .onAppear(){
+            viewModel.fetchUsuarios()
+            viewModel.fetchGrupos()
+            viewModel.fetchDespesas()
+            viewModel.fetchDividas()
+            
+            print("USUARIOS")
+            print(viewModel.usuarios)
+            
+//            print("GRUPOS")
+//            print(viewModel.grupos)
+//
+//            print("DESPESAS")
+//            print(viewModel.despesas)
+//
+//            print("DIVIDAS")
+//            print(viewModel.dividas)
+            
+            
+        }
     }
 }
 
