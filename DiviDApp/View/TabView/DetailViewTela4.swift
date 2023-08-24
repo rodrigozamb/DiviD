@@ -1,5 +1,3 @@
-//tela 4
-
 import SwiftUI
 struct DetailViewTela4: View {
     var grupo: Grupo
@@ -48,7 +46,7 @@ struct DetailViewTela4: View {
                     VStack{
                         ForEach( viewModel.despesas ){ desp in
                             if( grupo.despesas.contains(desp.id)){
-                                NavigationLink(destination: DetailViewTela6(despesa: desp)) {
+                                NavigationLink(destination: DetailViewTela6(grupo: grupo, despesa: desp)) {
                                     
                                     VStack{
                                         
@@ -72,10 +70,10 @@ struct DetailViewTela4: View {
         } // Fim onAppear
     }
 }
-
-
 struct DetailViewTela4_Previews: PreviewProvider {
     static var previews: some View {
         DetailViewTela4( grupo: Grupo( id: "1",nome: "Grupo X", integrantes: ["1","2","3"], despesas: ["1","2","3"], created_at: "12/09/2022") )
     }
 }
+
+

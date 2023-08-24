@@ -112,6 +112,7 @@
 				F92ACA492A95309700684437 /* ProfilePage.swift */,
 				F92F1C8B2A9683D60030AE77 /* NewGroupPage.swift */,
 				C4EE0A682A97E55B004B9A49 /* DetailViewTela4.swift */,
+				F99AA6072A97D8D7000B7782 /* DetailViewTela6.swift */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
@@ -122,7 +123,6 @@
 				F92ACA442A952AD000684437 /* TabView */,
 				F933FDA22A93DF1800B0256F /* OnBoardingPage.swift */,
 				F933FDA42A93E25200B0256F /* LoginPage.swift */,
-				F99AA6072A97D8D7000B7782 /* DetailViewTela6.swift */,
 				F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */,
 				F92ACA422A9523C400684437 /* MainPage.swift */,
 				F92ACA472A952FAA00684437 /* SearchView.swift */,

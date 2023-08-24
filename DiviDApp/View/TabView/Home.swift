@@ -58,7 +58,7 @@ struct Home: View {
                     }
                     
                     ForEach(homeModel.grupos) { grupo in
-                        NavigationLink(destination: DetailViewTela4(grupo: Grupo(id: "\(grupo.id)", nome: "\(grupo.nome)", integrantes: ["\(grupo.integrantes)"], despesas: ["\(grupo.despesas)"], created_at: "\(grupo.created_at)"))) {
+                        NavigationLink(destination: DetailViewTela4(grupo: grupo)) {
                             GroupCardView(grupo: grupo)
                                 .padding(.vertical, 10)
                         }
