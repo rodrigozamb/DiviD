@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C478A7E72A96790300D47B4B /* DetailViewTela4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478A7E62A96790300D47B4B /* DetailViewTela4.swift */; };
-		C478A7E92A96791C00D47B4B /* DetailViewTela6.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478A7E82A96791C00D47B4B /* DetailViewTela6.swift */; };
-		C478A7EB2A96795000D47B4B /* GroupDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478A7EA2A96795000D47B4B /* GroupDetailsView.swift */; };
-		C478A7EF2A9696A200D47B4B /* Retrieve.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478A7EE2A9696A200D47B4B /* Retrieve.swift */; };
+		C4EE0A692A97E55B004B9A49 /* DetailViewTela4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE0A682A97E55B004B9A49 /* DetailViewTela4.swift */; };
 		C50719072A8FF54700408DFD /* DiviDAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50719062A8FF54700408DFD /* DiviDAppApp.swift */; };
 		C50719092A8FF54700408DFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50719082A8FF54700408DFD /* ContentView.swift */; };
 		C507190B2A8FF54800408DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C507190A2A8FF54800408DFD /* Assets.xcassets */; };
@@ -23,16 +20,17 @@
 		F92ACA4A2A95309700684437 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92ACA492A95309700684437 /* ProfilePage.swift */; };
 		F92DB5FD2A93E3B7000A08A3 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = F92DB5FC2A93E3B7000A08A3 /* Fonts */; };
 		F92DB5FF2A93E541000A08A3 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */; };
+		F92F1C8C2A9683D60030AE77 /* NewGroupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F1C8B2A9683D60030AE77 /* NewGroupPage.swift */; };
+		F92F1C8E2A9691E50030AE77 /* GroupCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92F1C8D2A9691E50030AE77 /* GroupCardView.swift */; };
 		F933FDA32A93DF1800B0256F /* OnBoardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933FDA22A93DF1800B0256F /* OnBoardingPage.swift */; };
 		F933FDA52A93E25200B0256F /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933FDA42A93E25200B0256F /* LoginPage.swift */; };
 		F933FDA72A93E27A00B0256F /* LoginPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F933FDA62A93E27A00B0256F /* LoginPageModel.swift */; };
+		F99AA6042A97C4A9000B7782 /* GroupDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99AA6032A97C4A9000B7782 /* GroupDetailsView.swift */; };
+		F99AA6082A97D8D7000B7782 /* DetailViewTela6.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99AA6072A97D8D7000B7782 /* DetailViewTela6.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C478A7E62A96790300D47B4B /* DetailViewTela4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewTela4.swift; sourceTree = "<group>"; };
-		C478A7E82A96791C00D47B4B /* DetailViewTela6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewTela6.swift; sourceTree = "<group>"; };
-		C478A7EA2A96795000D47B4B /* GroupDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailsView.swift; sourceTree = "<group>"; };
-		C478A7EE2A9696A200D47B4B /* Retrieve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retrieve.swift; sourceTree = "<group>"; };
+		C4EE0A682A97E55B004B9A49 /* DetailViewTela4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewTela4.swift; sourceTree = "<group>"; };
 		C50719032A8FF54700408DFD /* DiviDApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiviDApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C50719062A8FF54700408DFD /* DiviDAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiviDAppApp.swift; sourceTree = "<group>"; };
 		C50719082A8FF54700408DFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,9 +45,13 @@
 		F92DB5FC2A93E3B7000A08A3 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
 		F92DB6002A93F256000A08A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F92F1C8B2A9683D60030AE77 /* NewGroupPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGroupPage.swift; sourceTree = "<group>"; };
+		F92F1C8D2A9691E50030AE77 /* GroupCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCardView.swift; sourceTree = "<group>"; };
 		F933FDA22A93DF1800B0256F /* OnBoardingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPage.swift; sourceTree = "<group>"; };
 		F933FDA42A93E25200B0256F /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		F933FDA62A93E27A00B0256F /* LoginPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageModel.swift; sourceTree = "<group>"; };
+		F99AA6032A97C4A9000B7782 /* GroupDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDetailsView.swift; sourceTree = "<group>"; };
+		F99AA6072A97D8D7000B7782 /* DetailViewTela6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewTela6.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +89,8 @@
 				F933FDA12A93DECA00B0256F /* ViewModel */,
 				F933FDA02A93DE9A00B0256F /* View */,
 				C50719062A8FF54700408DFD /* DiviDAppApp.swift */,
-				C478A7EA2A96795000D47B4B /* GroupDetailsView.swift */,
+				C50719082A8FF54700408DFD /* ContentView.swift */,
+				C5FD01892A93CED1006B2BB8 /* APIModels.swift */,
 				C507190A2A8FF54800408DFD /* Assets.xcassets */,
 				C507190C2A8FF54800408DFD /* Preview Content */,
 			);
@@ -107,6 +110,9 @@
 			children = (
 				F92ACA452A952C1B00684437 /* Home.swift */,
 				F92ACA492A95309700684437 /* ProfilePage.swift */,
+				F92F1C8B2A9683D60030AE77 /* NewGroupPage.swift */,
+				C4EE0A682A97E55B004B9A49 /* DetailViewTela4.swift */,
+				F99AA6072A97D8D7000B7782 /* DetailViewTela6.swift */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
@@ -120,9 +126,8 @@
 				F92DB5FE2A93E541000A08A3 /* CustomCorners.swift */,
 				F92ACA422A9523C400684437 /* MainPage.swift */,
 				F92ACA472A952FAA00684437 /* SearchView.swift */,
-				C478A7E62A96790300D47B4B /* DetailViewTela4.swift */,
-				C478A7E82A96791C00D47B4B /* DetailViewTela6.swift */,
-				C50719082A8FF54700408DFD /* ContentView.swift */,
+				F92F1C8D2A9691E50030AE77 /* GroupCardView.swift */,
+				F99AA6032A97C4A9000B7782 /* GroupDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,8 +137,6 @@
 			children = (
 				F933FDA62A93E27A00B0256F /* LoginPageModel.swift */,
 				C5FD01872A93CE85006B2BB8 /* ViewModel.swift */,
-				C478A7EE2A9696A200D47B4B /* Retrieve.swift */,
-				C5FD01892A93CED1006B2BB8 /* APIModels.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -212,19 +215,20 @@
 				C5FD018A2A93CED1006B2BB8 /* APIModels.swift in Sources */,
 				C5FD01882A93CE85006B2BB8 /* ViewModel.swift in Sources */,
 				F92ACA462A952C1B00684437 /* Home.swift in Sources */,
+				F92F1C8C2A9683D60030AE77 /* NewGroupPage.swift in Sources */,
 				F92ACA432A9523C400684437 /* MainPage.swift in Sources */,
+				F99AA6082A97D8D7000B7782 /* DetailViewTela6.swift in Sources */,
 				F933FDA72A93E27A00B0256F /* LoginPageModel.swift in Sources */,
+				C4EE0A692A97E55B004B9A49 /* DetailViewTela4.swift in Sources */,
+				F92F1C8E2A9691E50030AE77 /* GroupCardView.swift in Sources */,
 				C50719092A8FF54700408DFD /* ContentView.swift in Sources */,
 				F92ACA4A2A95309700684437 /* ProfilePage.swift in Sources */,
 				F933FDA32A93DF1800B0256F /* OnBoardingPage.swift in Sources */,
-				C478A7E92A96791C00D47B4B /* DetailViewTela6.swift in Sources */,
 				F92DB5FF2A93E541000A08A3 /* CustomCorners.swift in Sources */,
-				C478A7E72A96790300D47B4B /* DetailViewTela4.swift in Sources */,
 				F933FDA52A93E25200B0256F /* LoginPage.swift in Sources */,
 				C50719072A8FF54700408DFD /* DiviDAppApp.swift in Sources */,
 				F92ACA482A952FAA00684437 /* SearchView.swift in Sources */,
-				C478A7EB2A96795000D47B4B /* GroupDetailsView.swift in Sources */,
-				C478A7EF2A9696A200D47B4B /* Retrieve.swift in Sources */,
+				F99AA6042A97C4A9000B7782 /* GroupDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

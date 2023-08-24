@@ -23,7 +23,7 @@ struct MainPage: View {
             TabView(selection: $currentTab) {
                 Home()
                     .tag(Tab.Home)
-                Text("Add")
+                NewGroupPage(nomeNovosParticipante:[])
                     .tag(Tab.Add)
                  ProfilePage()
                     .tag(Tab.Profile)
@@ -37,7 +37,7 @@ struct MainPage: View {
                         // Atualizando tab
                         currentTab = tab
                     } label: {
-                        Image(tab.rawValue)
+                        Image(systemName: tab.rawValue)
                             .resizable()
                             .renderingMode(.template)
                             .aspectRatio(contentMode: .fit)
@@ -74,8 +74,8 @@ struct MainPage_Previews: PreviewProvider {
 // Cases iteraveis
 // Casos (cases) de tabs
 enum Tab: String, CaseIterable{
-    // Valor raw deve ser o mesmo que os nomes no asset
-    case Home = "Home"
-    case Add = "Add"
-    case Profile = "Profile"
+    // Valor raw deve ser o mesmo que os nomes nos assets (nesse caso
+    case Home = "house"
+    case Add = "plus"
+    case Profile = "person"
 }
