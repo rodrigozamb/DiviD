@@ -48,7 +48,7 @@ struct MainPage: View {
                         // Atualizando tab
                         currentTab = tab
                     } label: {
-                        Image(tab.rawValue)
+                        Image(systemName: tab.rawValue)
                             .resizable()
                             .renderingMode(.template)
                             .aspectRatio(contentMode: .fit)
@@ -86,7 +86,7 @@ struct MainPage_Previews: PreviewProvider {
 // Casos (cases) de tabs
 enum Tab: String, CaseIterable{
     // Valor raw deve ser o mesmo que os nomes no asset
-    case Home = "Home"
-    case Add = "Add"
-    case Profile = "Profile"
+    case Home = "house"
+    case Add = "plus"
+    case Profile = "person"
 }
