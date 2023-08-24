@@ -64,11 +64,11 @@ struct LoginPage: View {
                     // Campo de texto customizado
                     
                     // ícone de email (envelope/carta)
-                    CustomTextField(icon: "envelope", title: "Email", hint: "teste@gmail.com", value: $loginData.email, showPassword: .constant(false))
+                    CustomTextField(icon: "envelope", title: "Email", hint: "seuemail@gmail.com", value: $loginData.email, showPassword: .constant(false))
                         .padding(.top,30)
                     
                     // ícone da senha (cadeado)
-                    CustomTextField(icon: "lock", title: "Senha", hint: "123456", value: $loginData.password, showPassword: $loginData.showPassword)
+                    CustomTextField(icon: "lock", title: "Senha", hint: "suasenha", value: $loginData.password, showPassword: $loginData.showPassword)
                         .padding(.top,10)
                     
                     // Registrar: confirmar senha
