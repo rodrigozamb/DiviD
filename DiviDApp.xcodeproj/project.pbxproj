@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C4EE0A692A97E55B004B9A49 /* DetailViewTela4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE0A682A97E55B004B9A49 /* DetailViewTela4.swift */; };
+		C4EE0A6F2A97EF26004B9A49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE0A6E2A97EF25004B9A49 /* ContentView.swift */; };
+		C4EE0A712A97EF2E004B9A49 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE0A702A97EF2E004B9A49 /* APIModels.swift */; };
+		C4EE0A732A97F020004B9A49 /* NovaDespesaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EE0A722A97F020004B9A49 /* NovaDespesaView.swift */; };
 		C50719072A8FF54700408DFD /* DiviDAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50719062A8FF54700408DFD /* DiviDAppApp.swift */; };
-		C50719092A8FF54700408DFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50719082A8FF54700408DFD /* ContentView.swift */; };
 		C507190B2A8FF54800408DFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C507190A2A8FF54800408DFD /* Assets.xcassets */; };
 		C507190E2A8FF54800408DFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C507190D2A8FF54800408DFD /* Preview Assets.xcassets */; };
 		C5FD01882A93CE85006B2BB8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FD01872A93CE85006B2BB8 /* ViewModel.swift */; };
-		C5FD018A2A93CED1006B2BB8 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FD01892A93CED1006B2BB8 /* APIModels.swift */; };
 		F92ACA432A9523C400684437 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92ACA422A9523C400684437 /* MainPage.swift */; };
 		F92ACA462A952C1B00684437 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92ACA452A952C1B00684437 /* Home.swift */; };
 		F92ACA482A952FAA00684437 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92ACA472A952FAA00684437 /* SearchView.swift */; };
@@ -31,13 +32,14 @@
 
 /* Begin PBXFileReference section */
 		C4EE0A682A97E55B004B9A49 /* DetailViewTela4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewTela4.swift; sourceTree = "<group>"; };
+		C4EE0A6E2A97EF25004B9A49 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../../../../Downloads/ContentView.swift; sourceTree = "<group>"; };
+		C4EE0A702A97EF2E004B9A49 /* APIModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIModels.swift; path = ../../../../../Downloads/APIModels.swift; sourceTree = "<group>"; };
+		C4EE0A722A97F020004B9A49 /* NovaDespesaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaDespesaView.swift; sourceTree = "<group>"; };
 		C50719032A8FF54700408DFD /* DiviDApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiviDApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C50719062A8FF54700408DFD /* DiviDAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiviDAppApp.swift; sourceTree = "<group>"; };
-		C50719082A8FF54700408DFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C507190A2A8FF54800408DFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C507190D2A8FF54800408DFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C5FD01872A93CE85006B2BB8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		C5FD01892A93CED1006B2BB8 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
 		F92ACA422A9523C400684437 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		F92ACA452A952C1B00684437 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		F92ACA472A952FAA00684437 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -89,8 +91,6 @@
 				F933FDA12A93DECA00B0256F /* ViewModel */,
 				F933FDA02A93DE9A00B0256F /* View */,
 				C50719062A8FF54700408DFD /* DiviDAppApp.swift */,
-				C50719082A8FF54700408DFD /* ContentView.swift */,
-				C5FD01892A93CED1006B2BB8 /* APIModels.swift */,
 				C507190A2A8FF54800408DFD /* Assets.xcassets */,
 				C507190C2A8FF54800408DFD /* Preview Content */,
 			);
@@ -109,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				F92ACA452A952C1B00684437 /* Home.swift */,
+				C4EE0A722A97F020004B9A49 /* NovaDespesaView.swift */,
 				F92ACA492A95309700684437 /* ProfilePage.swift */,
 				F92F1C8B2A9683D60030AE77 /* NewGroupPage.swift */,
 				C4EE0A682A97E55B004B9A49 /* DetailViewTela4.swift */,
@@ -127,6 +128,8 @@
 				F92ACA422A9523C400684437 /* MainPage.swift */,
 				F92ACA472A952FAA00684437 /* SearchView.swift */,
 				F92F1C8D2A9691E50030AE77 /* GroupCardView.swift */,
+				C4EE0A6E2A97EF25004B9A49 /* ContentView.swift */,
+				C4EE0A702A97EF2E004B9A49 /* APIModels.swift */,
 				F99AA6032A97C4A9000B7782 /* GroupDetailsView.swift */,
 			);
 			path = View;
@@ -212,16 +215,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5FD018A2A93CED1006B2BB8 /* APIModels.swift in Sources */,
+				C4EE0A712A97EF2E004B9A49 /* APIModels.swift in Sources */,
 				C5FD01882A93CE85006B2BB8 /* ViewModel.swift in Sources */,
 				F92ACA462A952C1B00684437 /* Home.swift in Sources */,
 				F92F1C8C2A9683D60030AE77 /* NewGroupPage.swift in Sources */,
+				C4EE0A732A97F020004B9A49 /* NovaDespesaView.swift in Sources */,
 				F92ACA432A9523C400684437 /* MainPage.swift in Sources */,
 				F99AA6082A97D8D7000B7782 /* DetailViewTela6.swift in Sources */,
 				F933FDA72A93E27A00B0256F /* LoginPageModel.swift in Sources */,
 				C4EE0A692A97E55B004B9A49 /* DetailViewTela4.swift in Sources */,
+				C4EE0A6F2A97EF26004B9A49 /* ContentView.swift in Sources */,
 				F92F1C8E2A9691E50030AE77 /* GroupCardView.swift in Sources */,
-				C50719092A8FF54700408DFD /* ContentView.swift in Sources */,
 				F92ACA4A2A95309700684437 /* ProfilePage.swift in Sources */,
 				F933FDA32A93DF1800B0256F /* OnBoardingPage.swift in Sources */,
 				F92DB5FF2A93E541000A08A3 /* CustomCorners.swift in Sources */,
