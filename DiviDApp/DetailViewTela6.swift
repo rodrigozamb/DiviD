@@ -4,52 +4,117 @@
 //
 //  Created by Student10 on 21/08/23.
 //
-
 import SwiftUI
-
 struct DetailViewTela6: View {
-    
+    @State var grupo : Grupo
+    @State private var atualizarPressed = false
     @State private var checkedMembers: Set<String> = [] // Para rastrear os integrantes selecionados
-    var nome : Grupo
+    var despesa: Despesa
+    @StateObject var viewModel = ViewModel()
+    
+    @State  var despDividas: [Divida] = []
+    
     
     var body: some View {
-        
         VStack{
-            Text("\(nome.nome)").font(.system(size: 45))
+            Text(despesa.nome).font(.system(size: 50))
+                .multilineTextAlignment(.center)
             
-            if let primeiroIntegrante = nome.integrantes.first{
-                Text("\n\n\n")
-                Text("Criado por: \(primeiroIntegrante.nome)").font(.system(size: 30))
+            Spacer()
+            
+            ForEach(viewModel.usuarios) { usu in
+                
+                if(usu.id == despesa.donoID){
+                    Text(usu.nome)
+                        .font(.system(size: 25))
+                        .multilineTextAlignment(.center)
+                    Text("feito por")
+                        .font(.system(size: 20))
+                        .multilineTextAlignment(.center)
+                }
             }
             
-            Text("\n\n\n")
-            Text("Participantes:").font(.system(size: 30))
+            Spacer()
             
-            ScrollView{
-                ForEach(nome.integrantes, id: \.self){
-                    integrante in
-                    Text(integrante.nome)
-                    Spacer()
-                    Button {
-                        if checkedMembers.contains(integrante.nome) {
-                            checkedMembers.remove(integrante.nome)} else {
-                                checkedMembers.insert(integrante.nome)
+            Text("Participantes:").font(.system(size: 30))
+            //Text(despesa.donoID)
+            
+            // Caloteiros
+            ScrollView(.vertical){
+                VStack{
+                    ForEach(viewModel.dividas){
+                        divida in
+                        VStack{
+                            ForEach(viewModel.usuarios, id: \.self) { usu in
+                                
+                                if ( divida.despesaID == despesa.id && usu.id == divida.userID){
+                                    
+                                    HStack{
+                                        HStack{
+                                            VStack{
+                                                HStack{
+                                                    
+                                                    Text(usu.nome)
+                                                        .padding()
+                                                    Spacer()
+                                                    if (divida.status){
+                                                        Image(systemName: "checkmark.seal.fill")
+                                                            .foregroundColor(.green)
+                                                            .padding()
+                                                    } else {
+                                                        Text("R$\( divida.valor, specifier: "%.2f")")
+                                                            .padding()
+                                                    }
+                                                    
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+                                
+                                
                             }
-                    }label: {
-                                Image(systemName: checkedMembers.contains(integrante.nome) ? "checkmark.circle.fill" : "circle").font(.system(size: 25))
-                            }
+                        }
+                        .padding(10)
                         
-                } //.padding(.horizontal)
-                    } // FIM ScroolView
-            } // FIM VStack
-        }
+                        VStack{
+                            
+                            
+                        }//FIM HStack
+                    }//FIM Foreach
+                }
+            }
+            .frame(width: 300, height: 250).foregroundColor(.black).background{Color.gray}.cornerRadius(25)
+            
+            
+            Spacer()
+            
+            Button("Atualizar"){
+                atualizarPressed = true
+            }.padding(.horizontal) //Fim Botao
+            Spacer()
+            
+        }.onAppear() { //FIM VStack
+            viewModel.fetchDividas()
+            viewModel.fetchUsuarios()
+            
+            
+            for divs in viewModel.dividas{
+                if(divs.despesaID == despesa.id){
+                    despDividas.append(divs)
+                }
+            }
+        }//FIM OnAppear
     }
-    
-    struct DetailViewTela6_Previews: PreviewProvider {
-        static var previews: some View {
-            let sampleGrupo = Grupo(nome: "Aluguel Bola", integrantes: [Usuario(nome: "Rodrigo", email:"rodrigo@gmail.com", senha:"***", idade:20),
-                                                                        Usuario(nome: "Otavio", email:"rodrigo@gmail.com", senha:"***", idade:20),
-                                                                        Usuario(nome: "Guilherme", email:"rodrigo@gmail.com", senha:"***", idade:20)], despesas: [], created_at: Date())
-            return DetailViewTela6(nome: sampleGrupo)
-        }
-    }
+}
+
+
+//struct DetailViewTela6_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailViewTela6( despesa: Despesa(id: "1", nome: "coca cola", donoID: "1", created_at: "Hoje") )
+//    }
+//}
+
+
+

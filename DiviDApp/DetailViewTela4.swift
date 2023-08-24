@@ -1,110 +1,80 @@
-//
-//  DetailViewTela4.swift
-//  Projeto
-//
-//  Created by Student10 on 21/08/23.
-//
-
-/**
- 
- grupo para a tela --> N despesas --> para cada despesa: N dividas
- 
- 1 despesa
- nome : aluguel bola
- donoid : "Rodrigo123"
- id: "despesa1"
- 
- Dividas:
- 
- [
- {
- "userID" : "Otavio",
- "despsaID" : "despesa1",
- "valor" : "5,00",
- "status" : false,
- }
- 
- {
- "userID" : "Rodrigo"
- "despsaID" : "despesa1"
- "valor" : "5,00"
- "status" : false
- }
- ]
- 
- **/
-
 import SwiftUI
 struct DetailViewTela4: View {
-    let ids = [1, 2, 3 , 4, 5,6,7,8,9] // Seus IDs aqui
+    var grupo: Grupo
+    @StateObject var viewModel = ViewModel()
     
-    let grupos : [Grupo] = [
-        Grupo(nome: "Aluguel Bola", integrantes: [Usuario(nome: "Rodrigo", email:"rodrigo@gmail.com", senha:"***", idade:20),
-                                                  Usuario(nome: "Otavio", email:"rodrigo@gmail.com", senha:"***", idade:20),
-                                                  Usuario(nome: "Guilherme", email:"rodrigo@gmail.com", senha:"***", idade:20)], despesas: [], created_at: Date()),
-        Grupo(nome: "Show", integrantes: [], despesas: [], created_at: Date()),
-        Grupo(nome: "Grupo X", integrantes: [], despesas: [], created_at: Date())]
+    func calculaParicipantes(id: String) -> String{
+        var divs = 0
+        var pagos = 0
+        
+        
+        for divida in viewModel.dividas {
+            
+            if(divida.despesaID == id) {
+                divs = divs + 1
+                if(divida.status){
+                    pagos = pagos + 1
+                }
+            }
+        }
+        
+        return "\(pagos)/\(divs)"
+        
+    }
     
     var body: some View {
-        TabView {
-            NavigationStack{
-                ZStack {
+        
+        NavigationStack{
+            VStack{
+                HStack {
+                    Spacer()
+                    Text(grupo.nome)
+                        .font(.system(size: 35))
+                        .fontWeight(.bold)
+                        .padding()
+                    Label("", systemImage: "gearshape.fill").font(.system(size: 40))
+                }
+                HStack {
+                    Label("\(grupo.integrantes.count)", systemImage: "person.crop.circle.fill").font(.system(size: 35))
                     
-                    LinearGradient(gradient: Gradient(colors: [.blue]), startPoint: .top, endPoint: .bottom).ignoresSafeArea()
-                    RoundedRectangle(cornerRadius: 25).fill(.white).frame(width: 400, height: 500).offset(x:0,y: 145)
-                    
-                    VStack {
-                        HStack {
-                            Spacer()
-                            Text("RACHA")
-                                .font(.system(size: 35))
-                                .fontWeight(.bold)
-                                .padding()
-                            Label("", systemImage: "gearshape.fill").font(.system(size: 40))
-                        }
-                        HStack {
-                            Label("5", systemImage: "person.crop.circle.fill").font(.system(size: 35))
-                            
-                            Label("", systemImage: "cart.badge.questionmark").font(.system(size: 80))
-                            Text("15/08").font(.system(size: 20))
-                        }
-                        ScrollView {
-                            VStack{
-                                ForEach(grupos, id: \.self) { grupo in
-                                    
-                                    NavigationLink(destination: DetailViewTela6(nome: grupo)) {
-                                        
-                                        VStack{
-                                            Text("\(grupo.nome)").font(.system(size: 30))
-                                            
-                                            HStack{
-                                                Text("Algum Valor \(grupo.nome)")
-
-                                                //Text("Algum Valor \(grupo.integrantes.Usuario.nome)")
-                                                Spacer()
-                                                Text("Outro Valor \(grupo.nome)")
-                                            }//Fim HStack
-                                        } //Fim VStack
-                                        
-                                    }// Fim NavigationLink
-                                    
-                                }//Fim ForEach
-                                .frame(width: 300, height: 150).foregroundColor(.black)
-                                .background{Color.gray}.cornerRadius(25)
-                                
-                            }  //Fim VStack ScrollView
-                        } // Fim ScrollView
-                    } // FIM VStack Principal
-                    //Spacer()
-                } // FIM ZStack
+                    Label("", systemImage: "cart.badge.questionmark").font(.system(size: 80))
+                    Text("\(grupo.created_at)").font(.system(size: 20))
+                } // Layout de cima
                 
-            } //FIM NavigationStack
-            } //FIM TabView
-        }
-    }
-
-struct DetailViewTela4_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailViewTela4()
+                
+                ScrollView{
+                    VStack{
+                        ForEach( viewModel.despesas ){ desp in
+                            if( grupo.despesas.contains(desp.id)){
+                                NavigationLink(destination: DetailViewTela6(grupo: grupo, despesa: desp)) {
+                                    
+                                    VStack{
+                                        
+                                        Text(desp.nome).font(.system(size: 30))
+                                        HStack{
+                                            Text(calculaParicipantes(id:desp.id))
+                                            Spacer()
+                                            Text(desp.created_at)
+                                        }
+                                    }
+                                }
+                            }
+                        }.frame(width: 300, height: 150).foregroundColor(.black).background{Color.gray}.cornerRadius(25) //Fim ForEach
+                    }//Fim VStack
+                } //Fim ScrollView
+            }//Fim VStack Principal
+        }//Fim Navigation Stack
+        .onAppear(){
+            viewModel.fetchDespesas()
+            viewModel.fetchDividas()
+        } // Fim onAppear
     }
 }
+struct DetailViewTela4_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailViewTela4( grupo: Grupo( id: "1",nome: "Grupo X", integrantes: ["1","2","3"], despesas: ["1","2","3"], created_at: "12/09/2022") )
+    }
+}
+
+
+
