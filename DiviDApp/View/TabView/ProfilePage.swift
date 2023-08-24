@@ -14,7 +14,7 @@ struct ProfilePage: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack{
                     Text("Meu Perfil")
-                        .font(.custom(BarlowCondensedSemiBold, size: 28).bold())
+                        .font(.custom(CustomFont.barlowCondensedSemiBold, size: 28).bold())
                         .frame(maxWidth: .infinity, alignment: .leading)
                     
                     VStack(spacing: 15){
@@ -27,7 +27,7 @@ struct ProfilePage: View {
                             .padding(.bottom,-30)
                         
                         Text("Rosa Parks")
-                            .font(.custom(BarlowCondensedSemiBold, size: 16))
+                            .font(.custom(CustomFont.barlowCondensedSemiBold, size: 16))
                             .fontWeight(.semibold)
                         
                         HStack(alignment: .top, spacing: 10) {
@@ -36,7 +36,7 @@ struct ProfilePage: View {
                                 .rotationEffect(.init(degrees: 180))
                             
                             Text("Endereço: 1B Santa Mônica\nUFU\nUberlândia, MG")
-                                .font(.custom(BarlowCondensedSemiBold, size: 15))
+                                .font(.custom(CustomFont.barlowCondensedSemiBold, size: 15))
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                     }
@@ -107,7 +107,7 @@ struct ProfilePage: View {
         } label: {
             HStack{
                 Text(title)
-                    .font(.custom(barlowCondensedRegular, size: 17))
+                    .font(.custom(CustomFont.barlowCondensedRegular, size: 17))
                     .fontWeight(.semibold)
                 Spacer()
                 Image(systemName: "chevron.right")
