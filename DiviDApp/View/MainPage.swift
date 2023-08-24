@@ -23,17 +23,6 @@ struct MainPage: View {
             TabView(selection: $currentTab) {
                 Home()
                     .tag(Tab.Home)
-//                Button(action:  {}, label: {
-//                        Image(systemName: "plus")
-//                        .font(.title2)
-//                        .foregroundColor(.white)
-//                        .padding(20)
-//                        .background(Color("Purple"))
-//                        .clipShape(Circle())
-//                        .shadow(color: Color.black.opacity(0.05), radius: 5, x: 5, y: 5)
-//                        .shadow(color: Color.black.opacity(0.05), radius: 5, x: -5, y: -5)
-//                })
-//                .offset(y: -30)
                 NewGroupPage(nomeNovosParticipante:[])
                     .tag(Tab.Add)
                  ProfilePage()
@@ -85,7 +74,7 @@ struct MainPage_Previews: PreviewProvider {
 // Cases iteraveis
 // Casos (cases) de tabs
 enum Tab: String, CaseIterable{
-    // Valor raw deve ser o mesmo que os nomes no asset
+    // Valor raw deve ser o mesmo que os nomes nos assets (nesse caso
     case Home = "house"
     case Add = "plus"
     case Profile = "person"

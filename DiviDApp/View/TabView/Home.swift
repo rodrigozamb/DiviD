@@ -46,7 +46,6 @@ struct Home: View {
                     .padding(.top,25)
                     
                     if homeModel.grupos.isEmpty{
-                        
                         Image("notes")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
@@ -59,7 +58,7 @@ struct Home: View {
                     }
                     
                     ForEach(homeModel.grupos) { grupo in
-                        NavigationLink(destination: ProfilePage()) {
+                        NavigationLink(destination: DetailViewTela4(grupo: Grupo(id: "1",nome: "CRIAS", integrantes: ["1", "2", "3"], despesas: ["1"], created_at: "24/08/2023"))) {
                             GroupCardView(grupo: grupo)
                                 .padding(.vertical, 10)
                         }
