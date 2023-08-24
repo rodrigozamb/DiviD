@@ -10,7 +10,7 @@ import SwiftUI
 struct RetrieveView: View {
     @State private var usuario: [Usuario] = []
     private let usuarioManager = ViewModel()
-    
+
     var body: some View {
         List(usuario, id: \.id) { item in
             Text(item.nome)
