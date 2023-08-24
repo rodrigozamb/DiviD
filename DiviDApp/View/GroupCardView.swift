@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct GroupCardView: View {
-    @Binding var grupo: Grupo
+    // @Binding var grupo: Grupo
+    var grupo: Grupo
     let cardColors: [Color] = [
-        Color("Purple"),
+        Color("PurpleLight"),
         Color("Red"),
         Color("Blue"),
         Color("Green"),
+        Color("Yellow"),
+        //Color("Orange")
     ]
     
     var body: some View {
@@ -28,28 +31,37 @@ struct GroupCardView: View {
                         .font(.caption)
                 }
                 Spacer(minLength: 0)
-                // ... (your existing code for the toggle)
             }
             .foregroundColor(textColor(for: randomCardColor()))
             
-            HStack(spacing: -12) {
-                ForEach(1...3, id: \.self) { index in
-                    // ... (your existing code for the animoji images)
+            HStack(spacing: -12){
+                
+                ForEach(1...3,id: \.self){index in
+                    
+                    Image("animoji\(index)")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 25, height: 25)
+                        .padding(4)
+                        .background(.white,in: Circle())
+                    // borda...
+                        .background(Circle().stroke(.black,lineWidth: 1))
                 }
+                
                 Spacer(minLength: 15)
+                // Botao temporario
                 Button {
-                    // ... (your existing code for the button action)
                 } label: {
-                    Text("Join")
+                    Text("Entrar")
                         .foregroundColor(.black)
-                        .padding(.horizontal, 10)
+                        .padding(.horizontal,10)
                 }
                 .buttonStyle(.borderedProminent)
                 .controlSize(.small)
                 .tint(.white)
                 .shadow(radius: 1.2)
             }
-            .padding(.top, 20)
+            .padding(.top,20)
         }
         .padding()
         .background(randomCardColor(), in: RoundedRectangle(cornerRadius: 10))
@@ -60,7 +72,7 @@ struct GroupCardView: View {
         return randomColor
     }
     
-    // Determine appropriate text color based on background color's brightness
+    // determinar cor de texto apropriado baseado na cor de fundo
     func textColor(for backgroundColor: Color) -> Color {
         let backgroundColorComponents = UIColor(backgroundColor).cgColor.components ?? [0, 0, 0]
         let brightness = (0.299 * backgroundColorComponents[0] + 0.587 * backgroundColorComponents[1] + 0.114 * backgroundColorComponents[2])
@@ -70,8 +82,8 @@ struct GroupCardView: View {
 
 //struct GroupCardView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        // You need to provide a Binding<Grupo> here based on your data
-//        // For the preview, you can use a placeholder instance of Grupo
+//        // Binding<Grupo> necessario para os dados
+//        // fazer instancia de grupo para preview aqui
 //        GroupCardView(grupo: .constant(Grupo()))
 //    }
 //}
